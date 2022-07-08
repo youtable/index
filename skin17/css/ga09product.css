@@ -1,0 +1,63 @@
+/* 해당 디자인 기술 및 지식은 가영구 디자인측의 자산입니다 */
+/* 디자인을 구입하신 '구매자'분들 외에 다른 디자인센터 판매자가 해당 소스를 훔쳐보는 경우가 있어 멘트를 남기니, */
+/* 본인 능력껏, 양심껏 디자인하여 판매하시길 바랍니다 */
+
+.top-banner-wrap { margin-left:-235px; margin-right:-66px; } 
+.top-banner-wrap img { width:100%; max-width:100%; }
+/* 상단 베스트 */
+.best_item > li:first-child{width: calc((100% - (-60px * 3))/4)!important;}
+.best_item > li:nth-child(2){    width: calc((100% - (-60px * 3))/4)!important;}
+.best_item > li:last-child{width: calc((100% - (-60px * 3))/4)!important;
+    float: right;}
+/* 상품진열 기본 CSS */
+
+#ga09img2 {z-index:10; position:absolute; left:0px; top:0px; opacity:0; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+#ga09img2:hover { opacity:1; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+
+.ga09list .prdpadding {margin:0 15px 70px 15px; text-align:left;} /* 상품들간의 간격 */
+.ga09list .prdpadding .xans-product-listitem li:nth-child(1){height:41px;}
+.ga09list .prdline {margin-bottom:0;} /* 상품이미지 아래 상품명과의 간격 */
+
+.ga09list {margin:0 auto;}
+.ga09list ul { zoom:1; width:100%; margin-bottom:0;  display: table; font-size:0;}
+.ga09list ul a:link {text-decoration:none;}
+.ga09list ul a:hover {text-decoration:none; color:#000;}
+.ga09list ul:after {content:""; display:block; clear:both; }
+
+.ga09list ul li { display: inline-block; vertical-align:top;}
+
+.ga09list ul.grid2 > li { display: inline-block; width:50%; text-align:center; vertical-align:top;}
+.ga09list ul.grid3 > li { display: inline-block; width:33.33%; text-align:center; vertical-align:top;}
+.ga09list ul.grid4 > li { display: inline-block; width:25%; text-align:center; vertical-align:top;}
+.ga09list ul.grid5 > li { display: inline-block; width:20%; text-align:center; vertical-align:top;}
+
+.sec_price li{display:inline-block;}
+/* 상품정보 디자인 CSS */
+
+.ga09list .name {clear:both; font-size:13px; margin-bottom:13px; margin-top:20px; height:40px;}
+.ga09list .name a {color:#000}
+.ga09list .icon img {margin-top:10px; margin-right:5px }
+.ga09list .prices {line-height:18px; color:#000; font-size:11px;}
+.ga09list .price { font-size:11px; color:#727272; margin-right:5px; text-decoration:line-through !important; }
+.ga09list .normal { font-size:13px; font-weight:bold; color:#000; text-decoration:none !important; }
+.ga09list .info { margin-top:10px; line-height:18px; font-size:11px; color:#000}
+
+.ga09list .colorWrap {height:19px}
+
+/* 컬러칩 CSS */
+
+.ga09list .color { padding-top:7px; text-align:right;}
+.ga09list .color ul { display: inline-block; text-align:right; margin: 0; padding: 0; zoom:1; *display: inline;}
+.ga09list .color li {padding:0;}
+.ga09list .chips { width:8px; height:8px; margin-left:5px; font-size:0; line-height:0; }
+
+/* 베스트 */
+.ga09list ul.grid4 > li{position:relative;}
+.best_item .best_ico{position: absolute;
+    top: 0;
+    left: 15px;
+    background: #000;
+    padding:24px 17px;
+    z-index:100;
+}
+.best_item .best_ico span{color:#fff;font-size:15px;}

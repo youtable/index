@@ -1,0 +1,52 @@
+/* 하단 */
+#bottom-wrap {border-top:1px solid #dfdfdf; margin-top:100px}
+.footer{background:#000;height:100vh;}
+.footer_con {max-width:1450px; margin:0 auto; font-family: 'Montserrat', sans-serif; font-size:12px; line-height:24px; margin-top:80px;  color:#000;}
+.footer_con a { transition-duration: 0.3s; color: #4b4b4b; font-size:12px;}
+.footer_con a:hover{  text-decoration:none; transition-duration: 0.3s; color:#adadad;}
+.footer_con #cscenter{padding:40px 0;}
+.footer_con .copypadding {text-align:center;}
+.footer_con .copypadding1 {text-align:center;}
+.footer_con .copypadding2 {float:right;text-align:right;}
+
+.footer_con .inner {padding-top:220px; margin:0 50px}
+.footer_con .logo {}
+.footer_con .logo a{color:#fff;font-size:30px;}
+.footer_con .logo img {height:30px}
+
+
+#joinbt {border:1px solid #000; padding:10px 0; width:120px; text-align:center; font-size:13px; font-weight:500; -webkit-transition-duration: 0.3; transition-duration: 0.3s; }
+#joinbt:hover{border:1px solid #adadad;}
+
+/* 검색창 */
+.footer #topsearch{text-align:center; padding-bottom:220px;}
+.footer #search_fieldset {width:300px; margin:auto; position:relative;}
+.footer #search_fieldset input{    
+    width:100%;
+    border: none!important;
+    border-bottom: 1px solid #fff!important;
+    background: transparent;
+    color:#fff;
+	padding-bottom:9px;
+	text-indent:8px;
+}
+.footer #search_fieldset a{position:absolute; right:0; bottom:12px;}
+.footer #search_fieldset a img{width:17px;}
+.footer_con #cscenter #customer li{color:#fff;}
+.footer_con #cscenter #customer .cs1 {font-size:15px; padding-bottom:3px;  }
+.footer_con #cscenter #customer .cs2 {font-size:11px;}
+
+
+.footer_con #company {padding-bottom:40px;}
+.footer_con #company .copytext {font-size:12px;    color: #b9b9b9; display:inline; padding-right:8px;}
+.footer_con #company .copytext span {font-size:11px; margin-right:5px; }
+
+.footer_con #link {font-size:12px;}
+.footer_con #link ul li{display:inline;}
+.footer_con #link ul li a{padding:0 10px;}
+.footer_con #link .sns {text-align:left; margin-top:25px; }
+.footer_con #link .sns img {opacity:0.7; vertical-align:middle}
+.footer_con #link .sns img:hover {opacity:1.0}
+
+#bottomcopyright {margin-top:50px; text-align:left; font-size:11px; line-height:15px;}
+#bottomcopyright b {font-weight:600}

@@ -1,0 +1,157 @@
+body{
+    animation: fadein 2000ms ease-out;
+    -moz-animation: fadein 2000ms ease-out; /* Firefox */
+    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+    -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+
+.xans-product-7 ul.column4 li.item:nth-child(9){clear:both;}
+
+
+
+
+/* 이벤트 팝업 토스트 */
+ .pop_banner{  overflow: hidden; position: fixed; bottom: 0px; left: 50%; z-index: 0; width: 1040px; height: 50px; margin-left: -500px; background-color: rgba(0,0,0,0.8); border-radius: 50px; text-align: center; opacity: 0;
+	 transition: all .2s ease; transform-origin: right 70%; transition-timing-function: cubic-bezier(0, 0, 0.2, 1);}
+   .pop_banner p{color:#fff; line-height:49px;    font-size: 15px;}
+.pop_banner a{display:block;width:100%;height:100%;}
+	   .evt-toast {animation:evtToast 6s .2s forwards; -webkit-animation:evtToast 6s .2s forwards;}
+		@keyframes evtToast {
+			0% {bottom:0px; opacity:1; z-index:50000;}
+			10% {bottom:80px;}
+			20% {bottom:60px;}
+          
+			80% {bottom:60px; opacity:1; z-index:50000;}
+			100% {opacity:0; z-index:0;}
+		}
+#countdown1{font-weight:bold; font-size:18px; margin-right:13px;}
+
+/* 아이콘 */
+.prdList .icon{margin-top:10px;}
+
+
+
+.section{padding-bottom:350px;}
+.section.banner .bx-viewport{height:100vh!important;}
+.section.banner .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{bottom:auto;right:20px;top:45%;text-align: inherit!important;width:auto!important; z-index:100;}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item{display: inherit!important;}
+.section.banner .bx-wrapper .bx-pager.bx-default-pager a{margin:10px 0; width:10px; height:10px; background:#fff;border-radius:50%;opacity:0.5;}
+.section.banner .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{opacity:1!important;}
+
+
+/** 배너 이미지 변경**/
+/*.banner_bg00{background:url("http://xexymix.jpg3.kr/brandx_upload/pc_new01.jpg") no-repeat 0 0; height:100vh;background-size:cover; }*/
+.banner_bg01{background:url("/web/upload/images/mainb_14.jpg") no-repeat 0 0; height:100vh;background-size:cover; }
+.banner_bg02{background:url("/web/upload/images/mainb_12.jpg") no-repeat 0 0; height:100vh;background-size:cover; }
+.banner_bg03{background:url("/web/upload/images/mainb_11.jpg") no-repeat 0 0; height:100vh;background-size:cover; }
+.banner_bg04{background:url("/web/upload/images/mainb_01-1.jpg") no-repeat 0 0; height:100vh;background-size:cover; }
+.banner_bg05{background:url("/web/upload/images/mainb_02-1.jpg") no-repeat 0 0; height:100vh;background-size:cover; }
+
+/** 배너 이미지 끝**/
+
+
+.section.banner  li a{display:block;width:100%;height:100%;}
+.section.banner li:nth-child(5) .txt_con{right:13%;}
+.section.banner .txt_con{color:#fff;position: absolute; top: 300px; left:72%; max-width: 1600px;}
+.section.banner .txt_con .desc01{color:#9d0000; font-size:14px;}
+.section.banner .txt_con .title{   font-family:serif; font-size: 32px; letter-spacing: 1px;    padding: 10px 0 20px;}
+.section.banner .txt_con .desc02{font-size:15px; line-height: 24px; padding-bottom:40px;}
+.section.banner .txt_con .shop_btn{font-size:13px; border: 1px solid #eee; padding:12px 18px; position: relative; width:175px;} 
+.section.banner .txt_con .shop_btn span{display: inline-block; vertical-align: middle; position: absolute; right:22px;}
+.section.banner .txt_con .shop_btn span img{width:13px;}
+.rightSide{position:relative;} 
+.rightSide02{padding-left:160px;}
+.productTab{width:1540px; margin:auto;}
+.productTab .rightSide{padding-left:0; position:relative;}
+.more_btn{position:absolute; top:22px; right:0; }
+.section.productView{padding-bottom:100px;}
+.productView .rightSide{padding-bottom:250px;}
+.productView .rightSide .title{    padding: 100px 0 100px;}
+.productView .rightSide .desc{font-size:28px}
+.productView .rightSide .desc_more{font-size:15px;padding-top:20px;line-height:24px;}
+
+.product_banner li{position:relative;}
+.product_banner li a{display:block;width:100%;height:100%;}
+.product_banner .img_con{}
+.product_banner .img_con img{width:100%;}
+/*
+.product_banner .mid_banner01{background:url("/web/upload/images/mid_banner01.jpg") no-repeat 0 0; height:696px;}
+.product_banner .mid_banner02{background:url("/web/upload/images/mid_banner01.jpg") no-repeat 0 0; height:696px;}
+.product_banner .mid_banner03{background:url("/web/upload/images/mid_banner01.jpg") no-repeat 0 0; height:696px;}
+*/
+.product_banner .txt_con{position:absolute; top:20%; right:80px;z-index:999;}
+.product_banner .txt_con p{font-size:40px; font-weight:600;}
+.color{    opacity: 1!important;text-shadow: none!important;font-weight: bold;color:#000!important;}
+.product_banner .txt_con.txt01{right: 210px;}
+.product_banner .txt_con.txt02{top:29%;}
+.product_banner .txt_con.txt03{top:170px;}
+.section.productRolling{padding-bottom:340px;}
+.productRolling .desc{font-size:34px;color:#000;}
+.productRolling .desc_more{padding:35px 0 40px 0;font-size:17px;}
+.section.divideBanner{overflow:hidden; padding-bottom:190px; clear:both; padding-top:350px;}
+.banner_center{margin:0 128px auto;}
+.banner_center ul{min-width:1650px;  width:100%; overflow:hidden;}
+.banner_center li{   width: calc(98% / 3); height:300px; float: left; margin-right: 1%; position: relative;}
+/*
+.banner_center li.divide01{background:url("/web/upload/images/footer_cate_04.jpg") no-repeat center; height:300px; background-size:cover;}
+.banner_center li.divide02{background:url("/web/upload/images/footer_cate_05.jpg") no-repeat center; height:300px; background-size:cover;}
+.banner_center li.divide03{background:url("/web/upload/images/footer_cate_06.jpg") no-repeat center; height:300px; background-size:cover;}
+*/
+.banner_center li:last-child{margin-right:0;}
+.banner_center li a{display:block;width:100%;height:100%;}
+.banner_center li a img{width:100%;}
+.banner_center li .more_btn{top:auto;bottom:44px;}
+.banner_center .txt_box{color:#fff; position: absolute;   left:50px; bottom:50px; }
+.banner_center .txt_box h1{font-size:25px;padding-bottom:9px;}
+.banner_center .txt_box p{font-size:16px;}
+.title_life span{   color: #fff; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; font-size: 49px; opacity: 0.5; display:block;}
+.title_life span.color{opacity: 1!important; text-shadow: none!important; font-weight: bold; color: #000;}
+.stuff_title h1{font-size:25px;margin-bottom:60px;}
+.stuff_name{padding-bottom:23px;}
+.section.inform{clear:both;position:relative;padding-bottom:410px;height:682px;padding:0!important;    margin-bottom: 250px;}
+.informMargin{ position:relative; height:100%;}
+.inform_desc{width:1540px; background:#fff; position:absolute; left:50%; bottom:-115px; margin-left:-770px; padding:42px 0; text-align:center;}
+.inform_desc h1{font-size:28px; padding-bottom:15px;}
+.inform_desc p{font-size:15px;line-height:24px;}
+.inform_box{height:100%; background:url("/web/upload/images/main_collection.jpg") no-repeat 0 0; background-size:100%; }
+.grooming{overflow:hidden; width:1540px; margin:auto;}
+.grooming_con{min-width:1024px;max-width:1900px;}
+.grooming_con li{    width: calc(50% - 15px); float:left; margin-right:30px;}
+.grooming_con li:nth-child(2){margin-right:0;}
+.grooming_con .inner_desc h3{font-size:16px; padding:18px 0 2px;}
+.grooming_con .inner_desc p{font-size:12px;color:#555555; padding-bottom:10px;}
+.grooming_con .special_price{color:#ff0000; font-size:14px;} 
+.grooming_con .inner_img img{width:100%;}
+/* tab */
+.contentNav{overflow:hidden; padding-bottom:60px;}
+.productTab h1{float:left;width:240px;font-size:28px;padding-bottom:50px;}
+.contentNav li{float: left;     padding-top: 11px;}
+.contentNav a{padding-right:26px;font-size:15px; color:#acabab;}
+.contentNav li.active a{color: #000;font-weight:600;text-shadow:none;opacity:1;}
+.contentNav li.active a:after{}
+.tabContent{display: none;}
+.tabContent.active{display: table;}
+/* tab end */
+
+
+
+
+
+/* 전상품 진열 */
+.All_product{width:1540px; margin:auto; padding-bottom:100px;}

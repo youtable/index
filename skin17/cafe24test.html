@@ -1,0 +1,411 @@
+<!--@layout(/layout.html)-->
+<!--@css(/layout/basic/css/main.css)-->
+<!--@js(/layout/basic/js/main.js)-->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+window.jQuery1_11_2 = jQuery.noConflict(true);
+</script>
+<div id="wrap">
+    <section class="section banner">
+        <ul class="main_banner">
+            <li class="banner_bg01"></li>
+            <li class="banner_bg02"></li>
+            <li class="banner_bg03"></li>
+            <li class="banner_bg04"></li>
+            <li class="banner_bg05"></li>
+        </ul>
+    </section>
+    <section class="section productTab">
+        <div class="rightSide">
+                <h1 class="playfonts">WEEKLY BEST</h1>
+				<ul class="contentNav">
+					<li class="active"><a href="">All items.</a></li>
+					<li><a href="">Fashion.</a></li>
+					<li><a href="">Life.</a></li>
+				</ul>
+				<div class="more_btn"><a href="/shop.html"><img src="/web/upload/images/more_btn1.png" alt="더보기버튼"></a></div>
+				<!-- 탭부분 끝 -->
+				<!-- All items -->
+				<div class="tabContent active lazy" module="product_listmain_1">
+				    <!--@css(/css/module/product/listmain_1.css)-->
+				    <!--
+                        $count = 5
+                        $basket_result = /product/add_basket.html
+                        $basket_option = /product/basket_option.html
+                     -->
+                     <ul class="prdList column4  ">
+                        <li class="item animate fadeUp" id="anchorBoxId_{$product_no}">
+                            <div class="box">
+                                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" /></a>
+<!--
+                                <div class="status">
+                                    <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                                    <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div>
+                                </div>
+-->
+                                <p class="name">
+                                    <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                                </p>
+                                <ul module="product_ListItem">
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item animate fadeUp" id="anchorBoxId_{$product_no}">
+                            <div class="box">
+                                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" /></a>
+<!--
+                                <div class="status">
+                                    <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                                    <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div>
+                                </div>
+-->
+                                <p class="name">
+                                    <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                                </p>
+                                <ul module="product_ListItem">
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+				</div>
+				<!-- Style -->
+				<div class="tabContent lazy" module="product_listmain_2">
+				    <!--@css(/css/module/product/listmain_2.css)-->
+				    <!--
+                        $count = 5
+                        $basket_result = /product/add_basket.html
+                        $basket_option = /product/basket_option.html
+                     -->
+                     <ul class="prdList column4  ">
+                        <li class="item animate fadeUp" id="anchorBoxId_{$product_no}">
+                            <div class="box">
+                                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" /></a>
+<!--
+                                <div class="status">
+                                    <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                                    <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div>
+                                </div>
+-->
+                                <p class="name">
+                                    <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                                </p>
+                                <ul module="product_ListItem">
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item animate fadeUp" id="anchorBoxId_{$product_no}">
+                            <div class="box">
+                                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" /></a>
+<!--
+                                <div class="status">
+                                    <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                                    <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div>
+                                </div>
+-->
+                                <p class="name">
+                                    <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                                </p>
+                                <ul module="product_ListItem">
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+				</div>
+				<!-- Style --
+				<!-- Life  -->
+				<div class="tabContent" >
+					333
+				</div>
+			
+        </div>
+    </section><!-- section productTab end --> 
+   
+
+    <section class="section productView">
+        <ul class="product_banner">
+            <li class="mid_banner01">        
+                <a href="">
+                   <div class="txt_con Left animate delay1">
+                       <p><img src="/web/upload/images/clothing1.png" alt="clothing"></p>
+                   </div>
+                   <div class="txt_con txt02 Left animate delay2">
+                       <p><img src="/web/upload/images/clothing2.png" alt="clothing"></p>
+                   </div>
+                   <div class="txt_con txt03 Left animate delay3">
+                       <p><img src="/web/upload/images/clothing1.png" alt="clothing"></p>
+                   </div>
+                </a>
+            </li>
+            <li class="mid_banner02">        
+                <a href="">
+                   <div class="txt_con Left animate delay1">
+                       <p><img src="/web/upload/images/clothing1.png" alt="clothing"></p>
+                   </div>
+                   <div class="txt_con txt02 Left animate delay2">
+                       <p><img src="/web/upload/images/clothing2.png" alt="clothing"></p>
+                   </div>
+                   <div class="txt_con txt03 Left animate delay3">
+                       <p><img src="/web/upload/images/clothing1.png" alt="clothing"></p>
+                   </div>
+                </a>
+            </li>
+            <li class="mid_banner03">        
+                <a href="">
+                   <div class="txt_con Left animate delay1">
+                       <p><img src="/web/upload/images/clothing1.png" alt="clothing"></p>
+                   </div>
+                   <div class="txt_con txt02 Left animate delay2">
+                       <p><img src="/web/upload/images/clothing2.png" alt="clothing"></p>
+                   </div>
+                   <div class="txt_con txt03 Left animate delay3">
+                       <p><img src="/web/upload/images/clothing1.png" alt="clothing"></p>
+                   </div>
+                </a>
+            </li>
+            
+            
+        </ul>
+    </section>
+    <section class="section productRolling">
+        <div class="rightSide">
+            <div class="title lazy">
+                <h1 class="desc animate fadeUp">
+                    기본에 충실한<br>
+                    기본레이블, 베이직 니트
+                </h1>
+                <p class="desc_more animate fadeUp delay2">
+                    손 많이 가고 잘 입어지는 맨투맨과 후디의 계절. 많고 많은 상품들 중에서 마음에 드는 아이템을 고르기 어렵다면,<br>
+                    일상의 옷차림에 즐거움을 더해줄 새 시즌 새 스웨트셔츠를 딱 1주일 동안만 12% 할인의 쿠폰 혜택과 함께 5일간만<br>
+                    진행되는 한정 할인 아이템을 만나보실 수 있습니다.
+                </p>
+            </div>
+       
+                    <div module="product_listmain_5">
+                        <!--@css(/css/module/product/listmain_5.css)-->
+                                <!--
+                                    $count = 6
+                                    $basket_result = /product/add_basket.html
+                                    $basket_option = /product/basket_option.html
+                                 -->
+                                <ul class="prdList column4 item_slide">
+                                    <li class="item" id="anchorBoxId_{$product_no}">
+                                        <div class="box">
+                                            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_small}" id="{$image_small_id}" alt="" class="thumb" /></a>
+            <!--
+                                            <div class="status">
+                                                <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                                                <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div>
+                                            </div>
+            -->
+                                            <p class="name">
+                                                <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                                            </p>
+                                            <ul module="product_ListItem">
+                                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="item" id="anchorBoxId_{$product_no}">
+                                        <div class="box">
+                                            <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_small}" id="{$image_small_id}" alt="" class="thumb" /></a>
+            <!--
+                                            <div class="status">
+                                                <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                                                <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div>
+                                            </div>
+            -->
+                                            <p class="name">
+                                                <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                                            </p>
+                                            <ul module="product_ListItem">
+                                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                                <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                    </div>
+         </div>
+    </section>
+    <section class="section stuff">
+        <div class="rightSide lazy">
+           
+                <div class="stuff_title animate fadeUp"><h1 class="playfonts">LIFE STYLE</h1></div>
+                <div class="more_btn"><a href=""><img src="/web/upload/images/more_btn1.png" alt="더보기버튼"></a></div>
+          
+            <div module="product_listmain_6" >
+                <!--@css(/css/module/product/listmain_6.css)-->
+				    <!--
+                        $count = 4
+                        $basket_result = /product/add_basket.html
+                        $basket_option = /product/basket_option.html
+                     -->
+                     <ul class="prdList column4 lazy">
+                        <li class="item animate fadeUp delay3" id="anchorBoxId_{$product_no}">
+                            <div class="box">
+                                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" /></a>
+<!--
+                                <div class="status">
+                                    <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                                    <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div>
+                                </div>
+-->
+                                <p class="name">
+                                    <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                                </p>
+                                <ul module="product_ListItem">
+                                  <li class="{$item_display|display} stuff_name"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                  <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item animate fadeUp delay3" id="anchorBoxId_{$product_no}">
+                            <div class="box">
+                                <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" /></a>
+<!--
+                                <div class="status">
+                                    <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                                    <div class="button"><div class="option">{$option_preview_icon}</div> {$basket_icon} {$zoom_icon}</div>
+                                </div>
+-->
+                                <p class="name">
+                                    <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+                                </p>
+                                <ul module="product_ListItem">
+                                    <li class="{$item_display|display} stuff_name"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                    <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section inform">
+        <div class="informMargin lazy">
+            <div class="inform_box animate fadeUp">
+                <img src="/web/upload/images/main_collection.jpg" alt="메인컬렉션">
+            </div>
+            
+        </div>
+        <div class="lazy2">
+                <div class="inform_desc animate fadeUp ">
+                   <div class="more_btn"><a href=""><img src="/web/upload/images/more_btn1.png" alt="더보기버튼"></a></div>
+                    <h1>클래식함의 마르퀴즈 19SS 컬렉션</h1>
+                    <p>베이직한 디자인으로 라이프스타일 웨어를 전개하고있는</p>
+                    <p>19SS 컬렉션, 데일리하게 오래 입을 수 있는 아이템들을</p>
+                    <p>할인된 가격으로 만나보세요.</p>
+                </div>
+        </div>
+    </section>
+    <section class="section divideBanner">
+        <div class="banner_center lazy">
+            <ul class="animate fadeUp">
+               <li class="divide01">
+                  <a href="">
+                       <img src="/web/upload/images/clothing.jpg" alt="clothing 배너">
+                       <div class="txt_box">
+                           <h1>Clothing</h1>
+                           <p>AW/18 Season Lookbook</p>
+                       </div>
+                       <div class="more_btn"><img src="/web/upload/images/more_btnn.png" alt="더보기버튼"></div>
+                  </a>
+               </li> 
+               <li class="divide02">
+                  <a href="">
+                       <img src="/web/upload/images/life.jpg" alt="Life 배너">
+                       <div class="txt_box">
+                           <h1>Life</h1>
+                           <p>AW/18 Season Lookbook</p>
+                       </div>
+                       <div class="more_btn"><img src="/web/upload/images/more_btnn.png" alt="더보기버튼"></div>
+                  </a>
+               </li> 
+            </ul>
+        </div>
+    </section>
+
+   
+</div>
+
+
+
+<script>
+ 
+       $('.main_banner').bxSlider({ 
+         mode: 'fade', 
+         auto: true,
+         pause: 4000,
+         controls:false,
+         pager:true,
+        });  
+    
+       $('.product_banner').bxSlider({ 
+         mode: 'horizontal', 
+         auto: true,
+         pause: 4000,
+         speed: 1000,
+         controls:false,
+         pager:true,
+         minSlides:2,
+         maxSlides:2,
+      
+         onSliderLoad: function(currentIndex) {     
+            $(".product_banner").children().eq(currentIndex + 2).addClass("active-slide");
+          },
+         onSlideAfter: function($slideElement){
+            $(".product_banner").children().removeClass("active-slide");
+            $slideElement.addClass("active-slide");
+            }
+          });  
+        
+    
+       $('.item_slide').bxSlider({ 
+         mode: 'horizontal', 
+         auto: true,
+         pause: 4000,
+         controls:false,
+         pager:false,
+         slideWidth: 262,
+         moveSlides:1,
+         maxSlides:6,
+          easing:'linear',
+           
+        });  
+    
+       $('.contentNav li').click(function(e){
+          e.preventDefault();
+          var idx = $(this).index();
+          $('.contentNav li').removeClass('active').eq(idx).addClass('active');
+          $('.tabContent').removeClass('active').eq(idx).addClass('active');
+           
+       $('.xans-product-1 ul.column4 li.item:nth-child(4)').addClass('delay2');
+      
+   });
+    
+   
+    
+//     $(function() {
+// if (location.hash == "#n1") {
+//  $('.contentNav').find('li').eq(0).addClass('active').siblings().removeClass();
+//  $('#n1').addClass('active').siblings().removeClass('active');
+// } else if (location.hash == "#n2") {
+//  $('.contentNav').find('li').eq(1).addClass('active').siblings().removeClass();
+//  $('#n2').addClass('active').siblings().removeClass('active');
+// } else if (location.hash == "#n3") {
+//  $('.contentNav').find('li').eq(2).addClass('active').siblings().removeClass();
+//  $('#n3').addClass('active').siblings().removeClass('active');
+// }
+//})
+
+    
+</script>

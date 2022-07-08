@@ -1,0 +1,82 @@
+<!--@layout(/layout-login.html)-->
+<style>.eTab li.selected:after{display:none;}</style>
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>로그인</strong></li>
+    </ol>
+</div>
+
+
+<div id="wrap">
+    <div class="login_bg">
+        
+    </div>
+    
+</div>
+
+
+
+
+
+<div module="MyShop_OrderHistoryNologin" style="display:block!important;">
+    <!--@css(/css/module/member/login2.css)-->
+<!--@js(/js/module/member/login2.js)-->
+    <!--
+        $orderDetailUrl = /myshop/order/detail.html
+    -->
+    <div id="Nologin_wrap" style="border:1px solid #eaeaea; margin:0 auto; padding:30px 0; color:#2e2e2e; width:500px; margin-top:50px;display: block!important; ">
+		<div id="ordercheck">
+			<div class="namebox" title="주문자성함">{$form.order_name}</div>
+			<div class="nobox" title="주문번호">{$form.order_id}</div>
+			<div class="pwbox" title="주문비밀번호">{$form.order_password}</div>
+			<div class="bt">
+				<ul>
+					<li><input type="image" alt="로그인" src="/web/upload/ga09/login/check.gif"/></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+window.jQuery1_11_2 = jQuery.noConflict(true);
+</script>
+    <script>
+(function($) {
+     var jQuery = $;
+$(".pw_inputbox input").addClass("inputTypeText2");
+    
+$(".inputTypeText").on("focus", function () {
+    $(this).addClass("input_under"); 
+    $(".idbox").addClass("label_check");
+  
+
+});
+
+$(".inputTypeText").on("blur", function () {
+    $(this).removeClass("input_under");
+    $(".idbox").removeClass("label_check");
+       
+
+});
+    
+$(".inputTypeText2").on("focus", function () {
+    $(this).addClass("input_under");
+    $(".pwbox").addClass("label_check");
+     
+
+});
+
+$(".inputTypeText2").on("blur", function () {
+    $(this).removeClass("input_under");
+    $(".pwbox").removeClass("label_check");
+
+}); 
+$(".id_save label").text("Keep me signed in")
+    
+    
+    }(jQuery1_11_2));
+    </script>

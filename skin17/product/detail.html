@@ -1,0 +1,406 @@
+<!--@layout(/layout-list.html)-->
+<!--@js(/js/jquery-ui.min.js)-->
+<!--@js(/js/detail-scroll.js)-->
+
+<!--
+    $category_page = /product/list.html
+    $project_page = /product/project.html
+    $jointbuy_page = /product/jointbuy.html
+-->
+
+<!-- 상단 제품 정보  -->
+<div module="product_detail">
+    <!--@css(/css/module/product/detail.css)-->
+    <!--@css(/board/review/ga09css/review.css)-->
+    <!--@css(/board/review/ga09css/jquery.bxslider.css)-->
+    <!--@js(/board/review/ga09js/review.js)-->
+    <!--@js(/board/review/ga09js/ga09.review.js)-->
+    <!--@js(/js/detailguide.js)-->
+    <!--@css(/css/detailguide.css)--> 
+	<div style="font-size:0; line-height:0;">
+    <input id="txtProductNo" type="hidden" value="{$product_no}" />
+    <div id="review_popup">
+        <div class="content"></div>
+    </div>
+    </div>
+    
+    <div class="detailArea">
+ 
+        <!-- 이미지 영역(상세좌측) -->
+       
+           
+            
+        <div class="imgArea" module="product_image">
+            <div class="detail_inner">
+				 <div class="keyImg">
+					<div class="thumbnail" style="width:580px;">
+	<!--                    <a href="/product/image_zoom2.html{$zoom_param}" alt="{$product_code}" onclick="window.open(this.href, 'image_zoom2', 'toolbar=no,scrollbars=auto,resizable=yes,width=450,height=693,left=0,top=0', this);return false;">-->
+							<img src="{$big_img}" alt="{$seo_alt_tag}" class="{$big_img_class} {$img_display|display}" /><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span>
+	<!--                    </a>-->
+						<div id="zoom_wrap"></div>
+					</div>
+				</div>   
+				 <!-- 상세정보 우측 -->
+				 <div id="detail-right">
+					<div id="detailinfo">
+					<!--@import(/detail_infoarea.html)-->
+					</div>
+					<div module="product_action" class="fixed_buy">
+		<!--
+						<div class="btnArea">
+							<a class="{$buy_display|display}" onclick="{$action_buy}" style="font-weight:900;"><span>BUY NOW</span></a>
+							<a class="ga09bt2 {$soldout_display|display}">SOLD OUT</a>
+							<a class="{$basket_display|display}" onclick="{$action_basket}">CART</a>
+							<a onclick="{$action_wishlist}" class="{$wishlist_display|display}">WISHLIST</a>
+						</div>
+		-->
+		<!--
+						<div class="buy_btn"> 
+						   <div class="buy_img">
+								<div class="buy_hover">
+								  <div class="cart_btn">
+									 <div class="cart_con" style="height:80px;"><img src="/web/upload/images/buy_icons_09.png" alt="" class="cart_open"></div>
+									 <div><img src="/web/upload/images/buy_icons_08.png" alt="" style="display:none;" class="cart_close"></div>
+
+								  </div>
+
+								  <div class="buyIcon02 icon_state" onclick="{$action_wishlist}"><img src="/web/upload/images/buy_icons_06.png" alt=""></div>
+								  <div class="buyIcon03 icon_state" onclick="{$action_basket}"><img src="/web/upload/images/buy_icons_03.png" alt=""></div>
+								  <div class="buyIcon04 icon_state playfonts"  onclick="{$action_buy}" >Buy</div>
+								</div>
+						   </div>
+
+						</div>
+		-->
+
+
+
+						{$common_event_b}
+					</div><!-- //참고 -->
+				</div>
+				 <!-- 상세정보 우측 -->
+				 <div style="clear:both"></div>
+            </div>
+            <!-- 추가이미지 처리 -->
+<!--
+            <div class="listImg" module="product_addimage">
+                <ul>
+                    <li>{$add_img}</li>
+                    <li>{$add_img}</li>
+                </ul>
+            </div>
+-->
+            <!-- 추가이미지 처리 -->
+            
+            <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+            <div class="{$colorchip_display|display}">
+                <div class="color" module="product_Colorchip">
+                    <span class="chips" style="background-color:{$color}"></span>
+                    <span class="chips" style="background-color:{$color}"></span>
+                </div>
+            </div>
+            <!-- //참고 --> 
+              
+            <!-- 추가이미지 아래 상품상세/관련상품/후기/문의 게시판 -->
+            <div module="product_additional" class="detail_desc">
+                <!--@css(/css/module/product/additional.css)-->
+                <!--@css(/board/review/ga09css/photoreviewbutton.css)-->
+
+            
+               
+<!--                <div style="margin-top: 50px;"><img src="/web/upload/images/pc_Nbanner.jpg" alt="마르시오디에고 새해배너"></div>-->
+                <!-- 상품상세정보 -->
+                <div id="prdDetail">
+                        <!-- 상품 사용 후기 -->
+                <div id="prdReview" style="margin:auto; width:1000px; " class="cs_con">
+                    <div id="detailboardtext" class="crema-hide">
+                        <div style="float:left;">Review</div>
+                        <div style="float:right; text-align:right;" class="bt"><a href="{$review_write|replace:/product,/review}">Write</a><a href="{$review_list|replace:/product,/review}" style="margin-left:15px">View all</a></div>
+                        <div style="clear:both"></div>
+                    </div>
+
+                    <div class="board">
+                        
+                        <!-- cre.ma / 상품 리뷰 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                        <style>#prdReview .nodata { display: none; }</style>
+                        <div class="crema-product-reviews" data-product-code="{$product_no}"></div>
+                        
+                        <!--@js(/js/module/product/review.js)-->
+
+                        <a name="use_review" class="crema-hide"></a>
+
+                        <div id="ga09photoreview-detail" module="product_review" class="crema-hide">
+                            <table border="1" summary="">
+                                <caption>상품 게시판 목록</caption>
+                                <colgroup module="board_listheader_4">
+                                    <col style="width:70px;" />
+                                    <col style="width:auto;" />
+                                    <col style="width:auto;" />
+                                </colgroup>
+                                <tbody>
+
+                                    <tr>
+                                        <td class="number">{$no}</td>
+
+                                        <td class="infobox">
+                                            <div onclick="{$action_content_spread}" style="cursor:pointer;">
+                                                <span class="subject">{$subject}{$icon_lock}{$icon_new}{$icon_hit}</span>
+                                                <span class="{$spread_display|display} openbt"><a href="#none"><img src="/board/review/img/btn_unfold.gif" alt="내용 보기" /></a></span>
+                                                <div style="clear:both"></div>
+                                            </div>
+                                            <div class="{$use_point_display|display} point"><img src="/board/review/img/star/ico_point{$point_count}.gif" alt="{$point_count}점"></div>
+                                            <div class="writer">{$member_icon}{$writer}<span class="comment">{$comment_count}</span></div>
+                                        </td>
+
+                                        <td style="text-align:right; padding-right:20px">
+                                            <div class="date"><span class="{$date_display|display}">{$write_date|date:Y-m-d}</span></div>
+                                            <div><img src="{$img_src}" style="cursor:pointer; width:50px; height:50px; border-radius:50px; margin-top:8px; object-fit: cover;" href="/board/review/review_pop.html{$param_read}" onclick="ga09review.popReview(this);" onError="img_error(this);" /></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">{$no}</td>
+
+                                        <td class="infobox">
+                                            <div onclick="{$action_content_spread}" style="cursor:pointer">
+                                                <span class="subject">{$subject}{$icon_lock}{$icon_new}{$icon_hit}</span>
+                                                <span class="{$spread_display|display} openbt"><a href="#none"><img src="/board/review/img/btn_unfold.gif" alt="내용 보기" /></a></span>
+                                                <div style="clear:both"></div>
+                                            </div>
+                                            <div class="{$use_point_display|display} point"><img src="/board/review/img/star/ico_point{$point_count}.gif" alt="{$point_count}점"></div>
+                                            <div class="writer">{$member_icon}{$writer}<span class="comment">{$comment_count}</span></div>
+                                        </td>
+
+                                        <td style="text-align:right; padding-right:20px">
+                                            <div class="date"><span class="{$date_display|display}">{$write_date|date:Y-m-d}</span></div>
+                                            <div><img src="{$img_src}" style="cursor:pointer; width:50px; height:50px; border-radius:50px; margin-top:8px; object-fit: cover;" href="/board/review/review_pop.html{$param_read}" onclick="ga09review.popReview(this);" onError="img_error(this);" /></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
+
+                        <div module="product_reviewpaging" class="photoreview-paging crema-hide">
+                            <a href="{$param_first}"class="first"><img src="/board/review/img/page_first.gif" alt="첫 페이지" /></a>
+                            <a href="{$param_before}"><img src="/board/review/img/page_prev.gif" alt="이전 페이지" /></a>
+                            <ol>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                            </ol>
+                            <a href="{$param_next}"><img src="/board/review/img/page_next.gif" alt="다음 페이지" /></a>
+                            <a href="{$param_last}" class="last"><img src="/board/review/img/page_last.gif" alt="마지막 페이지" /></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //상품 사용 후기 -->
+                    <div class="banner_detail benefit"><a href="/collectionread.html?product_no=88&cate_no=50&display_group=1"><img src="/web/upload/images/top_benefit2.jpg" alt="회원가입이벤트"></a></div>
+                    <div class="prize_pc"><img src="/web/upload/images/prize_pc.jpg" alt="마르시오디에고 실검1위" style="width:100%;"></div>
+                    <div id="prddetailimg">{$product_detail}</div>
+                    <!--  코디아이템-->
+                    <div module="product_relation" id="prdRelated" class="ec-base-tab grid5">
+						<!--@css(/css/module/product/relation.css)-->
+						
+
+						<div class="relation">
+							<h3 class="playfonts">Recommend item</h3>
+							<div module="product_relationlist" class="swiper-container relationPrd">
+								<ul class="prdList swiper-wrapper">
+									<li class="item swiper-slide">
+										<div class="box">
+											<a href="{$link_product_detail}"><img src="{$img}" alt="{$seo_alt_tag}" class="thumb" /></a>                            
+											<ul>
+												<a href="{$link_product_detail}">
+													<li class="name">{$name}</li>
+				<!--                                    <li module="product_detail" class="subName {$eng_name}">{$eng_name}</li>-->
+													<li class="price"><p class="{$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</p> <p class="salePrice {$sale_price_display|display}">{$disp_sale_price}</p></li>
+												</a>
+											</ul>
+										</div>
+									</li>
+									<li class="item swiper-slide">
+										<div class="box">
+											<a href="{$link_product_detail}"><img src="{$img}" alt="{$seo_alt_tag}" class="thumb" /></a>                            
+											<ul>
+												<a href="{$link_product_detail}">
+													<li class="name">{$name}</li>
+				<!--                                    <li module="product_detail" class="subName {$eng_name}">{$eng_name}</li>-->
+													<li class="price"><p class="{$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</p> <p class="salePrice {$sale_price_display|display}">{$disp_sale_price}</p></li>
+												</a>
+											</ul>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+							<div class="pagingBox">
+									<div class="swiper-button-next slideRelatedNext"></div>
+									<div class="swiper-button-prev slideRelatedPrev"></div>
+								</div>
+						</div>
+				    </div>
+
+
+                </div>
+                <!-- 상품상세정보 -->
+                
+                 
+                
+              
+                
+                
+                <!-- 상품 Q&A -->
+                <div id="prdQnA" style="margin-top:100px" class="cs_con">
+                    <div id="detailboardtext">
+                        <div style="float:left;">Q&A</div>
+                        <div style="float:right; text-align:right;"class="bt"><a href="{$qna_write}">Write</a><a href="{$qna_list}" style="margin-left:15px">View all</a></div>
+                        <div style="clear:both"></div>
+                    </div>
+
+                    <div id="qnaArea">
+                        <div module="product_qna">
+                            <!--@js(/js/module/product/qna.js)-->
+                            <table border="1" summary="" class="board {$list_display|display}">
+                                <caption>상품 Q&amp;A</caption>
+                                <colgroup>
+                                    <col style="width:70px;" />
+                                    <col style="width:auto" />
+                                    <col style="width:100px;" />
+                                </colgroup>
+                                <thead>
+                                    <tr id="detailboardtext2">
+                                        <th scope="col">NO</th>
+                                        <th scope="col">TITLE</th>
+                                        <th scope="col">WRITER</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{$no}</td>
+                                        <td class="subject">{$icon_re}{$icon_lock} <a href="/product/provider/review_read.xml{$param_read}">{$subject}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                                        <td>{$member_icon} {$writer}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{$no}</td>
+                                        <td class="subject">{$icon_re}{$icon_lock} <a href="/product/provider/review_read.xml{$param_read}">{$subject}</a> {$icon_new}{$icon_hit}{$icon_file}{$comment_count}</td>
+                                        <td>{$member_icon} {$writer}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div module="product_qnapaging" class="photoreview-paging">
+                            <a href="{$param_first}"class="first"><img src="/board/review/img/page_first.gif" alt="첫 페이지" /></a>
+                            <a href="{$param_before}"><img src="/board/review/img/page_prev.gif" alt="이전 페이지" /></a>
+                            <ol>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                            </ol>
+                            <a href="{$param_next}"><img src="/board/review/img/page_next.gif" alt="다음 페이지" /></a>
+                            <a href="{$param_last}" class="last"><img src="/board/review/img/page_last.gif" alt="마지막 페이지" /></a>
+                        </div>
+                   </div>
+
+                </div>
+                <!-- 상품 Q&A -->
+                
+            </div><!-- product_additional 모듈닫기 -->
+
+        </div><!-- 이미지 영역닫기 -->
+    </div><!-- detailArea 영역 -->
+        
+       
+        
+        
+
+</div><!-- //상단 제품 정보 -->
+
+
+
+<!--@define(cmc_log)-->
+    
+<!-- cre.ma / 리뷰 팝업 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+<div class="crema-popup"></div>
+
+<!-- cre.ma / init 스크립트 (PC) / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+<script>(function(i,s,o,g,r,a,m){if(s.getElementById(g)){return};a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.id=g;a.async=1;a.src=r;m.parentNode.insertBefore(a,m)})(window,document,'script','crema-jssdk','//widgets.cre.ma/marciodiego.com/init.js');</script>    
+
+
+
+
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+window.jQuery1_11_2 = jQuery.noConflict(true);
+</script>
+<script>
+
+
+
+
+      $('.brief_slide01').slick({
+         arrows: true,
+		   dots: true,
+		    slidesToShow: 1,
+      });
+
+	  $('.brief_slide02').slick({
+         arrows: true,
+		   dots: true,
+		    slidesToShow: 1,
+          
+      });
+    
+      	  $('.brief_slide03').slick({
+         arrows: true,
+		   dots: true,
+		    slidesToShow: 1,
+          
+      });
+	 
+	  var swiper = new Swiper('.relationPrd', {
+      slidesPerView: 4,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+      
+     
+    });
+
+	 
+   
+//	
+//		var slider =  $(".brief_slide01").bxSlider({ 
+//
+//			pager:true,
+//			controls:true,
+//			infiniteLoop: false,
+//
+//		});
+//
+//
+//		var slider2 =  $(".brief_slide02").bxSlider({ 
+//
+//			pager:true,
+//			controls:true,
+//			infiniteLoop: false,
+//
+//		});
+//        slider.reloadSlider(); 
+//	    slider2.reloadSlider(); 
+//	
+//	
+
+
+</script>
+<!--@js(/js/module/product/add_product_script2.js)-->

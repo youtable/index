@@ -1,0 +1,39 @@
+.xans-myshop-asyncbenefit { margin:0 0 20px; color:#353535;}
+.xans-myshop-asyncbenefit .thumbnail img { max-width:70px; max-height:70px; }
+.xans-myshop-asyncbenefit .description { min-height:70px; }
+.xans-myshop-asyncbenefit .ec-base-box.typeThinBg { margin-top:-1px; padding-left:110px; }
+.xans-myshop-asyncbenefit .invite > strong { display:block; }
+.xans-myshop-asyncbenefit .invite .copy { margin:8px 0 0; }
+.xans-myshop-asyncbenefit .invite p img { cursor:pointer; vertical-align:middle; }
+.xans-myshop-asyncbenefit .invite #reco_url { width:439px; }
+.xans-myshop-asyncbenefit .invite ul { margin:8px 0 0; font-size:11px; line-height:1.25; color:#757575; }
+.xans-myshop-asyncbenefit .invite ul li { margin:3px 0 0; }
+.ec-base-box.typeMember .information .description{font-size:12px;}
+.modify_btn{
+display: inline-block;
+font-size: 12px;
+background: #363636;
+color: #fff;
+padding: 10px 20px;
+margin-right:5px;
+}
+.can_btn{
+display: inline-block;
+font-size: 12px;
+background: #fff;
+color: #535746;
+padding: 9px 43px;
+border: 1px solid #cbcbcb;
+
+}
+.sec_btn{
+display: inline-block;
+font-size: 12px;
+background: #fff;
+color:  #535746;
+padding: 9px 18px;
+border:  1px solid #cbcbcb;
+
+}
+
+.ec-base-button.justify{padding:20px 0;}

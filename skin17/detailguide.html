@@ -1,0 +1,61 @@
+<!--
+<div id="detailguide" module="product_additional">
+
+  <a class="accordion-label" href="#">추천아이템</a>
+  <div class="inner">
+       <div module="product_relation" id="prdRelated">
+
+            <div class="relation">
+               
+                <div module="product_relationlist" >
+                    <ul class="prdList relatedSlide">
+                        <li class="item">
+                            <div class="box">
+                                <a href="/product/detail.html{$param}"><img src="{$img_small}" alt="" class="thumb" /></a>
+                              
+                            </div>
+                        </li>
+                        <li class="item ">
+                            <div class="box">
+                                <a href="/product/detail.html{$param}"><img src="{$img_small}" alt="" class="thumb" /></a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+-->
+
+
+<script>
+//
+//var swiper = new Swiper('.relatedSlide', {
+//       
+//        slidesPerView: 3,
+//        pagination: {
+//             el: '.swiper-pagination',
+//            type: 'progressbar',
+//           
+//        },
+//      
+//      
+//    });
+    
+      $('.relatedSlide').bxSlider({ 
+         mode: 'horizontal', 
+      
+        
+         pager:false,
+        infiniteLoop:false,
+        
+       
+         
+          easing:'linear',
+           
+        });  
+</script>

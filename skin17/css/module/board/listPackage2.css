@@ -1,0 +1,66 @@
+/* 게시판 전체 공통 */
+.ec-base-paginate li{border:0 none!important;}
+.xans-board-search p{background:none!important;}
+.xans-board-search p:before{display: none;}
+.xans-board-title .title { margin:0px 0 50px; text-align:center; }
+.xans-board-title .title h2 {    font-size: 20px; font-weight: 400; font-family: 'Montserrat',sans-serif; }
+.xans-board-title .title h2 .xans-board-category {margin-left:30px; }
+.xans-board-title .title h2 .xans-board-category select {font-size:16px; min-width:150px; height:30px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(/web/upload/images/board_select_arrow.png) no-repeat 95% 50%;  background-size: 15px; padding-left:10px; margin-bottom:10px; border:0; border-bottom:1px solid #000; font-weight:bold; cursor:pointer;  }
+.xans-board-title .title h2 .xans-board-category select::-ms-expand { display: none; }
+.xans-board-search {position:absolute; top:-5px; right:0; padding:0!important; }
+.xans-board-search select { height:30px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(/web/upload/images/board_select_arrow.png) no-repeat 95% 50%;  background-size: 10px; padding-left:5px; margin-bottom:10px; border:0; border-bottom:1px solid #000; font-weight:bold; cursor:pointer;  }
+.xans-board-search select::-ms-expand { display: none; }
+.xans-board-search .inputBox {border-bottom:1px solid #000; display:inline-block; margin-bottom:10px; vertical-align:top; }
+.xans-board-search .inputBox input { height:29px; line-height:29px; padding:0 4px; border:0; }
+.subMenu{display:none;}
+.boardMidBox {position:relative; height:42px; }
+.midCate {margin-left:0px; position:relative; margin-bottom:20px;  position:relative;  width:100%; }
+.midCate ul {font-size:0; }
+.midCate li {margin-right:25px; display:inline-block; font-size:13px; font-weight:normal; }
+.midCate li a {color:#afafaf; font-size:15px; font-weight:normal; padding-bottom:3px; }
+.midCate li a.active {color:#000; border-bottom:2px solid #000; }
+
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+.xans-board-listpackage .boardSort { float:left; margin:0 0 10px; }
+
+/* 갤러리형 탭메뉴 */
+ul.xans-board-listheader { text-align:right; margin:0 0 10px; }
+ul.xans-board-listheader li { display:inline; }
+
+/* list */
+.xans-board-listpackage { margin:0 auto 20px; position:relative; }
+.xans-board-listpackage .ec-base-table { clear:both; }
+.xans-board-listpackage .ec-base-table .subject img { margin:0 1px; }
+.xans-board-listpackage .ec-base-table .thumb a { overflow:hidden; }
+.xans-board-listpackage .ec-base-table .thumb img { width:50px; float:left; }
+.xans-board-listpackage .ec-base-table .thumb span { float:left; width:80px; padding:0 0 0 8px; text-align:left; }
+.xans-board-buttonlist.ec-base-button.typeBG { border:0 none!important; background:none!important; }
+.xans-board-buttonlist.ec-base-button a {padding:20px 12px; border-radius:100%; display:inline-block; position:relative; z-index:1; position:absolute; right:0; bottom:-60px; }
+
+.xans-board-listpackage .ec-base-table.typeList > table {border-top:2px solid #000; }
+
+.ec-base-paginate.xans-board-paging {position:relative; }
+.ec-base-paginate.xans-board-paging a{display: none;}
+
+.faqMenu {margin-bottom:25px; position:relative; }
+.faqMenu ul {font-size:0; }
+.faqMenu ul li {margin-right:25px; display:inline-block; font-size:16px; font-weight:normal; }
+.faqMenu ul li a {color:#afafaf; font-size:13px; font-weight:normal; padding-bottom:3px; }
+.faqMenu ul li a.active {color:#000; font-weight:bold;  }
+
+.faqList.ec-base-table.typeList.gBorder tbody td { padding:0; border:0; }
+.subjectList .navMenu2 > li { padding:12px 15px; font-size:0; text-align:left;  }
+.subjectList .navMenu2 > li.active { }
+.subjectList .navMenu2 > li .cate,
+.subjectList .navMenu2 > li a {font-size:12px; display:inline-block; vertical-align:top; cursor:pointer; }
+.subjectList .navMenu2 > li .cate {width:150px; text-align:center; }
+.subjectList .navMenu2 > li .subMenu {font-size:14px; padding:20px 0; }
+.subjectList .navMenu2 > li ul li {font-size:0; }
+.subjectList .navMenu2 > li ul .answer { width:150px; color:#ccc; display:inline-block; vertical-align:middle; text-align:right; font-weight:900; line-height:1.1; box-sizing:border-box; padding-right:20px;  }
+.subjectList .navMenu2 > li ul .answerTxt {display:inline-block; vertical-align:top; width:900px; font-size:12px; word-break:keep-all;  }
+/*.subjectList .navMenu2 > li .cate, .subjectList .navMenu2 > li a{font-size:12px!important;}*/
+.answerTxt{background-color:#fff!important; font-size:12px;}
+
+/* 상품후기 아코디언형 */
+.xans-board-listpackage #content_view td { padding:9px 10px 20px; background:#f6f7f9; text-align:left; word-break:break-all; white-space:pre-wrap; }
